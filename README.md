@@ -37,7 +37,7 @@
 Use [Swift Package Manager](https://swift.org/package-manager/):
 
 ```swift
-.package(url: "https://github.com/your-org/AsyncConveyor.git", from: "1.0.0")
+.package(url: "https://github.com/0xfeedface1993/swift-async-conveyor.git", from: "1.0.0")
 ```
 
 Then add "AsyncConveyor" to your target dependencies.
