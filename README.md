@@ -86,24 +86,24 @@ Note: Even though Task B starts earlier in wall time, it waits for Task A to com
 ## 🛑 Cancellation Safety
 
 If a task is cancelled while waiting or running, AsyncConveyor ensures:
-	•	The task is properly removed from the internal queue
-	•	The next task resumes correctly
-	•	No memory leaks or deadlocks
+- The task is properly removed from the internal queue
+- The next task resumes correctly
+- No memory leaks or deadlocks
 
 ---
 
 ## 🔒 Use Cases
-	•	Serializing file reads/writes
-	•	Managing access to a database or cache
-	•	Enforcing order of operations in state machines
-	•	Coordinating request pipelines
-	•	Preventing overlapping animations or transitions
+- Serializing file reads/writes
+- Managing access to a database or cache
+- Enforcing order of operations in state machines
+- Coordinating request pipelines
+- Preventing overlapping animations or transitions
 
 ---
 
 ## 🧪 Testing Tips
-	•	Each .run { } block is awaited and can be tested deterministically.
-	•	Consider injecting AsyncConveyor as a dependency when testing logic that depends on ordering.
+- Each .run { } block is awaited and can be tested deterministically.
+- Consider injecting AsyncConveyor as a dependency when testing logic that depends on ordering.
 
 ---
 
@@ -116,6 +116,3 @@ AsyncConveyor follows a minimal locking, actor-free design by using ManagedCriti
 ## 👷 Contributions
 
 Contributions and feedback are welcome! Please open issues or PRs.
-
----
-
